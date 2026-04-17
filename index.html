@@ -5,289 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Plataforma de IA para o agro sustentável - Concurso Agrinho 2026">
   <meta name="agrinho" content="Agro forte, futuro sustentável">
-  <title>AgroIA | Inovação e Sustentabilidade no Campo</title>
+  <title>AgroIA | Inovação + Sustentabilidade no Campo</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-flex">
-      <div class="logo">
-        <i class="fas fa-brain"></i>
-        <span>Agro<span class="ia-logo">IA</span></span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#inovacoes">Inovações</a></li>
-          <li><a href="#timeline">Jornada IA</a></li>
-          <li><a href="#cases">Cases</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Toggle Modo Sustentável (Dark/Light) -->
+  <input type="checkbox" id="modo-sustentavel" class="modo-toggle">
+  <div class="theme-wrapper">
 
-  <main>
-    <!-- HERO COM BACKGROUND DE TRATOR E IA -->
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="ia-badge">
-            <i class="fas fa-microchip"></i> AgroIA 2.0 · Inteligência de Ponta
-            <span class="new-dot">novo</span>
-          </div>
-          <h1>Agro forte,<br><span class="gradient-text">futuro sustentável</span></h1>
-          <p>Unimos inteligência artificial, dados de satélite e práticas regenerativas para uma revolução verde no campo. Produzir mais, preservar melhor.</p>
-          <div class="hero-buttons">
-            <a href="#inovacoes" class="btn-primary">Explorar inovações <i class="fas fa-arrow-right"></i></a>
-            <a href="#cases" class="btn-glass">Ver cases reais</a>
-          </div>
+    <!-- HEADER -->
+    <header>
+      <div class="container header-flex">
+        <div class="logo">
+          <i class="fas fa-brain"></i>
+          <span>Agro<span class="ia-logo">IA</span></span>
         </div>
-        <div class="hero-card">
-          <div class="card-header">
-            <i class="fas fa-comment-dots"></i> Assistente AgroIA · Online
-            <span class="status-live">ao vivo</span>
-          </div>
-          <div class="card-body">
-            <div class="message">
-              <i class="fas fa-robot"></i>
-              <p>📈 <strong>Previsão de safra</strong> → 15% mais eficiência hídrica com irrigação inteligente.</p>
-            </div>
-            <div class="message">
-              <i class="fas fa-robot"></i>
-              <p>🌱 <strong>Carbono neutro</strong> → Sistemas ILPF reduzem emissões em até 60%.</p>
-            </div>
-            <div class="message typing">
-              <i class="fas fa-satellite-dish"></i>
-              <p>Processando dados de 12 satélites em tempo real...</p>
-            </div>
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#cards-flip">Inovações</a></li>
+            <li><a href="#timeline">Jornada</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <label for="modo-sustentavel" class="modo-label">
+          <i class="fas fa-leaf"></i> Modo sustentável
+        </label>
       </div>
-    </section>
+    </header>
 
-    <!-- SEÇÃO INOVAÇÕES (CARDS GRANDES) -->
-    <section id="inovacoes" class="inovacoes">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-moderno"><i class="fas fa-flask"></i> Inovações que transformam</div>
-          <h2>Tecnologias <span class="destaque">disruptivas</span> para o agro</h2>
-          <p>Conheça as soluções que já estão revolucionando o campo brasileiro</p>
-        </div>
-        <div class="inovacoes-grid">
-          <div class="card-inovacao">
-            <div class="card-front">
-              <i class="fas fa-satellite-dish"></i>
-              <h3>Monitoramento por satélite</h3>
-              <p>IA analisa imagens e detecta pragas, erosão e estresse hídrico em tempo real.</p>
-              <div class="chip-tech">Visão computacional</div>
-            </div>
-          </div>
-          <div class="card-inovacao">
-            <div class="card-front">
-              <i class="fas fa-robot"></i>
-              <h3>Robôs autônomos</h3>
-              <p>Aplicação localizada de insumos, reduzindo desperdício em até 40%.</p>
-              <div class="chip-tech">Automação</div>
-            </div>
-          </div>
-          <div class="card-inovacao">
-            <div class="card-front">
-              <i class="fas fa-database"></i>
-              <h3>Blockchain rastreável</h3>
-              <p>Garantia de origem sustentável e certificação digital da produção.</p>
-              <div class="chip-tech">Rastreabilidade</div>
-            </div>
-          </div>
-          <div class="card-inovacao">
-            <div class="card-front">
-              <i class="fas fa-charging-station"></i>
-              <h3>Bioenergia + IA</h3>
-              <p>Otimização de biodigestores e gestão inteligente de resíduos.</p>
-              <div class="chip-tech">Energia limpa</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
 
-    <!-- LINHA DO TEMPO DA IA NO AGRO -->
-    <section id="timeline" class="timeline-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-moderno"><i class="fas fa-chart-line"></i> Evolução inteligente</div>
-          <h2>A jornada da <span class="destaque">IA no campo</span></h2>
-          <p>Como a tecnologia vem transformando o agro ano após ano</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <span class="year">2020</span>
-              <h3>Primeiros drones</h3>
-              <p>Início do uso de drones para mapeamento de lavouras e aplicação de defensivos.</p>
+      <!-- ================= 1. HERO (trator + assistente IA) ================= -->
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <div class="ia-badge"><i class="fas fa-microchip"></i> AgroIA 2.0 · Inteligência de Ponta</div>
+            <h1>Agro forte,<br><span class="gradient-text">futuro sustentável</span></h1>
+            <p>Unimos IA, dados de satélite e práticas regenerativas. Produzir mais, preservar melhor.</p>
+            <div class="hero-buttons">
+              <a href="#cards-flip" class="btn-primary">Explorar inovações <i class="fas fa-arrow-right"></i></a>
+              <a href="#quiz" class="btn-glass">Teste seus conhecimentos</a>
             </div>
           </div>
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <span class="year">2022</span>
-              <h3>IA na irrigação</h3>
-              <p>Sensores e algoritmos reduzem consumo de água em 30% nas regiões semiáridas.</p>
-            </div>
-          </div>
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <span class="year">2024</span>
-              <h3>Blockchain + rastreabilidade</h3>
-              <p>Consumidor acompanha toda a cadeia produtiva via QR code.</p>
-            </div>
-          </div>
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <span class="year">2026</span>
-              <h3>Agro carbono neutro</h3>
-              <p>Plataformas de IA compensam emissões e incentivam práticas regenerativas.</p>
+          <div class="hero-card">
+            <div class="card-header"><i class="fas fa-comment-dots"></i> Assistente AgroIA · Online</div>
+            <div class="card-body">
+              <div class="message"><i class="fas fa-robot"></i><p>📈 Previsão de safra: +15% eficiência hídrica.</p></div>
+              <div class="message"><i class="fas fa-robot"></i><p>🌱 ILPF reduz emissões em até 60%.</p></div>
+              <div class="message typing"><i class="fas fa-satellite-dish"></i><p>Processando dados de 12 satélites...</p></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CASES DE SUCESSO -->
-    <section id="cases" class="cases">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge-moderno"><i class="fas fa-star-of-life"></i> Casos reais</div>
-          <h2>Quem já está <span class="destaque">transformando</span> com a AgroIA</h2>
-          <p>Produtores e cooperativas que adotaram a tecnologia e colheram resultados impressionantes</p>
-        </div>
-        <div class="cases-grid">
-          <div class="case-card">
-            <div class="case-icon"><i class="fas fa-tractor"></i></div>
-            <h3>Fazenda Novo Horizonte</h3>
-            <p>Redução de 35% no uso de água e aumento de 22% na produtividade com irrigação inteligente.</p>
-            <div class="case-stats">+22% produtividade</div>
+      <!-- ================= 2. CARDS FLIP (ideia 2) ================= -->
+      <section id="cards-flip" class="flip-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-sync-alt"></i> Tecnologia 3D</div>
+            <h2>Práticas sustentáveis <span class="destaque">em um clique</span></h2>
+            <p>Passe o mouse sobre os cards e descubra soluções inovadoras</p>
           </div>
-          <div class="case-card">
-            <div class="case-icon"><i class="fas fa-leaf"></i></div>
-            <h3>Coopera Verde</h3>
-            <p>Certificação de carbono neutro para 12 mil hectares de soja com rastreabilidade blockchain.</p>
-            <div class="case-stats">Carbono neutro</div>
-          </div>
-          <div class="case-card">
-            <div class="case-icon"><i class="fas fa-charging-station"></i></div>
-            <h3>Bioenergia Sul</h3>
-            <p>Biodigestores otimizados por IA geram energia para 5.000 residências rurais.</p>
-            <div class="case-stats">Energia limpa</div>
+          <div class="flip-grid">
+            <div class="flip-card"><div class="flip-inner"><div class="flip-front"><i class="fas fa-tint"></i><h4>Irrigação inteligente</h4></div><div class="flip-back"><p>💧 Economia de até 35% de água com sensores IoT.</p></div></div></div>
+            <div class="flip-card"><div class="flip-inner"><div class="flip-front"><i class="fas fa-seedling"></i><h4>Plantio direto</h4></div><div class="flip-back"><p>🌾 Reduz erosão em 80% e aumenta matéria orgânica.</p></div></div></div>
+            <div class="flip-card"><div class="flip-inner"><div class="flip-front"><i class="fas fa-charging-station"></i><h4>Bioenergia</h4></div><div class="flip-back"><p>⚡ Biodigestores convertem resíduos em energia limpa.</p></div></div></div>
+            <div class="flip-card"><div class="flip-inner"><div class="flip-front"><i class="fas fa-chart-line"></i><h4>Agricultura de precisão</h4></div><div class="flip-back"><p>📡 Drones e sensores reduzem desperdício em 40%.</p></div></div></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- MAPA CONCEITUAL DE IA (VISUAL) -->
-    <section class="mapa-ia">
-      <div class="container">
-        <div class="mapa-wrapper">
-          <div class="mapa-texto">
-            <div class="badge-moderno white"><i class="fas fa-network-wired"></i> Ecossistema AgroIA</div>
-            <h2>Inteligência artificial em <span class="destaque-white">todas as etapas</span></h2>
-            <p>Do plantio à colheita, passando por logística e comercialização, a IA está presente.</p>
-            <ul>
-              <li><i class="fas fa-microchip"></i> Sensores IoT no solo</li>
-              <li><i class="fas fa-cloud-sun"></i> Previsão climática avançada</li>
-              <li><i class="fas fa-truck"></i> Logística inteligente</li>
-              <li><i class="fas fa-chart-pie"></i> Mercado e precificação dinâmica</li>
-            </ul>
+      <!-- ================= 3. MAPA INTERATIVO DO BRASIL (ideia 3) ================= -->
+      <section class="mapa-brasil">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-map-marked-alt"></i> Mapa da sustentabilidade</div>
+            <h2>Regiões <span class="destaque">agro sustentável</span></h2>
+            <p>Passe o mouse sobre cada região para ver os dados</p>
           </div>
-          <div class="mapa-visual">
-            <div class="node node-1">Solo</div>
-            <div class="node node-2">Clima</div>
-            <div class="node node-3">Plantio</div>
-            <div class="node node-4">Tratos</div>
-            <div class="node node-5">Colheita</div>
-            <div class="node node-6">Comercialização</div>
-            <div class="center-node">
-              <i class="fas fa-brain"></i>
-              <span>IA Agro</span>
-            </div>
+          <div class="mapa-container">
+            <div class="regiao regiao-co"><span>Centro-Oeste</span><div class="tooltip">🌽 Soja com plantio direto: 80% menos erosão</div></div>
+            <div class="regiao regiao-s"><span>Sul</span><div class="tooltip">🍇 Viticultura regenerativa + conservação de nascentes</div></div>
+            <div class="regiao regiao-se"><span>Sudeste</span><div class="tooltip">☕ Café sombreado + captação de água da chuva</div></div>
+            <div class="regiao regiao-ne"><span>Nordeste</span><div class="tooltip">🍈 Fruticultura irrigada com energia solar</div></div>
+            <div class="regiao regiao-n"><span>Norte</span><div class="tooltip">🌳 Sistemas agroflorestais (SAF) e cacau sustentável</div></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTATO FINAL -->
-    <section id="contato" class="contato">
-      <div class="container">
-        <div class="contato-wrapper">
-          <div class="contato-info">
-            <div class="badge-moderno"><i class="fas fa-headset"></i> Central de relacionamento</div>
-            <h2>Vamos <span class="destaque">co-criar</span> o futuro sustentável</h2>
-            <p>Dúvidas, sugestões ou parcerias? Nossa equipe de especialistas está pronta para atender.</p>
-            <div class="info-linha">
-              <i class="fas fa-envelope"></i>
-              <span>agrinhoprogramacao@escola.pr.gov.br</span>
-            </div>
-            <div class="info-linha">
-              <i class="fas fa-phone-alt"></i>
-              <span>(41) 99999-9999</span>
-            </div>
-            <div class="info-linha">
-              <i class="fab fa-whatsapp"></i>
-              <span>(41) 9 9999-9999</span>
-            </div>
+      <!-- ================= 4. LINHA DO TEMPO COM ÍCONES (ideia 4) ================= -->
+      <section id="timeline" class="timeline-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-chart-line"></i> Evolução inteligente</div>
+            <h2>A jornada da <span class="destaque">IA no campo</span></h2>
           </div>
-          <form class="contato-form">
-            <input type="text" placeholder="Seu nome completo" required>
-            <input type="email" placeholder="Seu e-mail profissional" required>
-            <textarea rows="4" placeholder="Sua mensagem para a AgroIA..."></textarea>
-            <button type="submit" class="btn-primary full">Enviar mensagem <i class="fas fa-paper-plane"></i></button>
-            <p class="form-note">*Este formulário é demonstrativo. Em breve, um assistente IA responderá você.</p>
-          </form>
+          <div class="timeline">
+            <div class="timeline-item left"><div class="timeline-content"><span class="year">2020</span><i class="fas fa-drone"></i><h3>Primeiros drones</h3><p>Mapeamento de lavouras e aplicação localizada.</p></div></div>
+            <div class="timeline-item right"><div class="timeline-content"><span class="year">2022</span><i class="fas fa-tint"></i><h3>IA na irrigação</h3><p>Redução de 30% no consumo de água.</p></div></div>
+            <div class="timeline-item left"><div class="timeline-content"><span class="year">2024</span><i class="fas fa-link"></i><h3>Blockchain + rastreabilidade</h3><p>Rastreamento total da cadeia produtiva.</p></div></div>
+            <div class="timeline-item right"><div class="timeline-content"><span class="year">2026</span><i class="fas fa-globe-americas"></i><h3>Agro carbono neutro</h3><p>IA compensa emissões e incentiva práticas verdes.</p></div></div>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <i class="fas fa-brain"></i>
-        <span>Agro<span class="ia-logo">IA</span></span>
-        <p>Inteligência artificial a serviço do agro sustentável.</p>
-        <div class="social-icons">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-youtube"></i>
+      <!-- ================= 5. ANTES E DEPOIS (ideia 5) ================= -->
+      <section class="antes-depois">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-balance-scale"></i> Compare</div>
+            <h2>Método tradicional <span class="destaque">vs AgroIA</span></h2>
+          </div>
+          <div class="comparacao">
+            <div class="card-trad"><h3>🚜 Tradicional</h3><div class="barra"><div class="fill trad" style="width: 100%">Alta emissão</div></div><div class="barra"><div class="fill trad2" style="width: 70%">Desperdício água</div></div><div class="barra"><div class="fill trad3" style="width: 60%">Erosão solo</div></div></div>
+            <div class="card-sust"><h3>🌿 AgroIA</h3><div class="barra"><div class="fill sust" style="width: 30%">-70% emissões</div></div><div class="barra"><div class="fill sust2" style="width: 25%">-75% água</div></div><div class="barra"><div class="fill sust3" style="width: 15%">-85% erosão</div></div></div>
+          </div>
         </div>
-      </div>
-      <div class="footer-links">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#inovacoes">Inovações</a></li>
-          <li><a href="#timeline">Jornada IA</a></li>
-          <li><a href="#cases">Cases</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Regulamento</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-          <li><a href="#">Termos de uso</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Concurso Agrinho - Programação Paraná | SENAR-PR | SEED-PR</p>
-      <p class="tema">🌾 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
-    </div>
-  </footer>
+      </section>
 
+      <!-- ================= 6. DEPOIMENTOS (carrossel com radio) ================= -->
+      <section class="depoimentos">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-comments"></i> Quem já usa</div>
+            <h2>Depoimentos de <span class="destaque">agricultores</span></h2>
+          </div>
+          <div class="carrossel">
+            <input type="radio" name="depo" id="depo1" checked><input type="radio" name="depo" id="depo2"><input type="radio" name="depo" id="depo3">
+            <div class="slides"><div class="slide"><i class="fas fa-user-circle"></i><p>"A AgroIA reduziu meu consumo de água em 40%." - João, GO</p></div><div class="slide"><i class="fas fa-user-circle"></i><p>"Com a rastreabilidade blockchain, valorizei minha produção." - Maria, PR</p></div><div class="slide"><i class="fas fa-user-circle"></i><p>"Energia solar + IA = lucro e sustentabilidade." - Carlos, BA</p></div></div>
+            <div class="nav"><label for="depo1"></label><label for="depo2"></label><label for="depo3"></label></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 7. QUIZ SUSTENTÁVEL (ideia 7) ================= -->
+      <section id="quiz" class="quiz-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge-moderno"><i class="fas fa-question-circle"></i> Teste seu conhecimento</div>
+            <h2>Quiz <span class="destaque">agro sustentável</span></h2>
+          </div>
+          <div class="quiz-container">
+            <div class="pergunta"><p>❓ Qual prática reduz mais a erosão do solo?</p><div class="opcoes"><button class="quiz-opt">Queimada</button><button class="quiz-opt">Plantio direto ✅</button><button class="quiz-opt">Aragem profunda</button></div></div>
+            <div class="pergunta"><p>❓ O que significa ILPF?</p><div class="opcoes"><button class="quiz-opt">Integração Lavoura-Pecuária-Floresta ✅</button><button class="quiz-opt">Irrigação de baixa pressão</button><button class="quiz-opt">Inspeção de pragas</button></div></div>
+            <div class="pergunta"><p>❓ Qual a vantagem da agricultura de precisão?</p><div class="opcoes"><button class="quiz-opt">Uso exato de insumos ✅</button><button class="quiz-opt">Aumento do desmatamento</button><button class="quiz-opt">Uso indiscriminado de água</button></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 8. CONTADOR DE ÁRVORES (animado CSS) ================= -->
+      <section class="arvores">
+        <div class="container">
+          <div class="contador-wrapper">
+            <div class="contador-circulo"><span class="contador-num">12.345</span><span>árvores plantadas pela AgroIA</span><div class="folhas"><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i><i class="fas fa-leaf"></i></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 9. PARCERIAS (logos) ================= -->
+      <section class="parcerias">
+        <div class="container">
+          <div class="section-header"><div class="badge-moderno"><i class="fas fa-handshake"></i> Parceiros</div><h2>Instituições que <span class="destaque">confiam</span> na AgroIA</h2></div>
+          <div class="logos"><i class="fab fa-envira"></i><i class="fas fa-leaf"></i><i class="fas fa-tractor"></i><i class="fas fa-chart-line"></i><i class="fas fa-microchip"></i><span>Embrapa</span><span>SENAR</span><span>FAO</span></div>
+        </div>
+      </section>
+
+      <!-- ================= 10. FAQ ACCORDION (CSS puro) ================= -->
+      <section class="faq">
+        <div class="container">
+          <div class="section-header"><div class="badge-moderno"><i class="fas fa-question"></i> Dúvidas frequentes</div><h2>FAQ <span class="destaque">sustentável</span></h2></div>
+          <div class="accordion"><input type="checkbox" id="faq1"><label for="faq1">🌱 O que é agricultura regenerativa?</label><div class="accordion-content">Sistema que recupera a saúde do solo, aumenta a biodiversidade e sequestra carbono.</div></div>
+          <div class="accordion"><input type="checkbox" id="faq2"><label for="faq2">💧 Como a IA reduz o consumo de água?</label><div class="accordion-content">Sensores e algoritmos acionam irrigação apenas quando necessário, com base em dados climáticos.</div></div>
+          <div class="accordion"><input type="checkbox" id="faq3"><label for="faq3">📡 O que é ILPF?</label><div class="accordion-content">Integração Lavoura-Pecuária-Floresta, sistema que une produção e preservação.</div></div>
+        </div>
+      </section>
+
+      <!-- ================= 11. NOTÍCIAS (cards com zoom) ================= -->
+      <section class="noticias">
+        <div class="container">
+          <div class="section-header"><div class="badge-moderno"><i class="fas fa-newspaper"></i> Curadoria IA</div><h2>Notícias do <span class="destaque">agro sustentável</span></h2></div>
+          <div class="news-grid"><div class="news-card"><div class="news-img"></div><h3>Brasil reduz emissões no agro</h3><p>Novas tecnologias cortam 48% das emissões.</p><span class="news-date">15/04/2026</span></div><div class="news-card"><div class="news-img"></div><h3>Recorde em área de ILPF</h3><p>15 milhões de hectares integrados.</p><span class="news-date">10/04/2026</span></div><div class="news-card"><div class="news-img"></div><h3>Energia solar no campo cresce 47%</h3><p>Com IA, gestão de energia fica mais eficiente.</p><span class="news-date">05/04/2026</span></div></div>
+        </div>
+      </section>
+
+      <!-- ================= 12. GRÁFICO DE BARRAS (estático) ================= -->
+      <section class="grafico">
+        <div class="container">
+          <div class="section-header"><div class="badge-moderno"><i class="fas fa-chart-bar"></i> Evolução ILPF no Brasil</div><h2>Área integrada <span class="destaque">(milhões ha)</span></h2></div>
+          <div class="barras"><div class="barra-graf"><span>2020</span><div class="bar" style="height: 40px"><span>5M</span></div></div><div class="barra-graf"><span>2022</span><div class="bar" style="height: 70px"><span>9M</span></div></div><div class="barra-graf"><span>2024</span><div class="bar" style="height: 110px"><span>12M</span></div></div><div class="barra-graf"><span>2026</span><div class="bar" style="height: 150px"><span>15M</span></div></div></div>
+        </div>
+      </section>
+
+      <!-- ================= 13. CITAÇÃO DIÁRIA ================= -->
+      <section class="citacao">
+        <div class="container"><div class="citacao-box"><i class="fas fa-quote-left"></i><p>"O agro sustentável não é uma escolha, é o único caminho para alimentar o mundo sem destruir o planeta."</p><span>— AgroIA, 2026</span></div></div>
+      </section>
+
+      <!-- ================= 14. DOWNLOADS DE MATERIAIS ================= -->
+      <section class="downloads">
+        <div class="container"><div class="section-header"><div class="badge-moderno"><i class="fas fa-download"></i> Materiais gratuitos</div><h2>Baixe <span class="destaque">guias e relatórios</span></h2></div><div class="download-buttons"><a href="#" class="btn-download">📘 Guia de boas práticas (PDF)</a><a href="#" class="btn-download">📊 Relatório de sustentabilidade 2026</a><a href="#" class="btn-download">🌱 Cartilha ILPF para pequenos produtores</a></div></div>
+      </section>
+
+      <!-- ================= 15. CONTATO (já existente, mantido) ================= -->
+      <section id="contato" class="contato">
+        <div class="container"><div class="contato-wrapper"><div class="contato-info"><div class="badge-moderno"><i class="fas fa-headset"></i> Central de relacionamento</div><h2>Vamos <span class="destaque">co-criar</span> o futuro</h2><p>Dúvidas, sugestões ou parcerias? Nossa equipe está pronta.</p><div class="info-linha"><i class="fas fa-envelope"></i><span>agrinhoprogramacao@escola.pr.gov.br</span></div><div class="info-linha"><i class="fas fa-phone-alt"></i><span>(41) 99999-9999</span></div></div><form class="contato-form"><input type="text" placeholder="Seu nome" required><input type="email" placeholder="Seu e-mail" required><textarea rows="4" placeholder="Sua mensagem"></textarea><button type="submit" class="btn-primary full">Enviar mensagem <i class="fas fa-paper-plane"></i></button><p class="form-note">*Formulário demonstrativo</p></form></div></div>
+      </section>
+    </main>
+
+    <footer><div class="container footer-grid"><div class="footer-brand"><i class="fas fa-brain"></i><span>Agro<span class="ia-logo">IA</span></span><p>Inteligência artificial a serviço do agro sustentável.</p><div class="social-icons"><i class="fab fa-instagram"></i><i class="fab fa-linkedin"></i><i class="fab fa-youtube"></i></div></div><div class="footer-links"><h4>Navegação</h4><ul><li><a href="#home">Início</a></li><li><a href="#cards-flip">Inovações</a></li><li><a href="#timeline">Jornada</a></li><li><a href="#quiz">Quiz</a></li></ul></div><div class="footer-links"><h4>Legal</h4><ul><li><a href="#">Regulamento</a></li><li><a href="#">Política de privacidade</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Concurso Agrinho - Programação Paraná | SENAR-PR | SEED-PR</p><p class="tema">🌾 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p></div></footer>
+  </div>
 </body>
 </html>
