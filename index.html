@@ -120,7 +120,6 @@
 
     <main class="container">
         
-        <!-- SEÇÃO SOBRE COM IMAGEM ADICIONADA -->
         <section id="sobre" class="content-section">
             <div class="grid-layout">
                 <div class="text-box" style="border: 2px solid var(--primary); border-radius: 20px; padding: 30px; background: rgba(0,0,0,0.3);">
@@ -139,7 +138,6 @@
             </div>
         </section>
 
-        <!-- SEÇÃO SALÁRIOS BRASIL -->
         <section id="salario" class="content-section">
             <div class="header-center">
                 <span class="label">VALORIZAÇÃO</span>
@@ -173,7 +171,6 @@
             </div>
         </section>
 
-        <!-- SEÇÃO SALÁRIOS EUA -->
         <section id="salario-eua" class="content-section">
             <div class="header-center">
                 <span class="label">MERCADO INTERNACIONAL</span>
@@ -218,7 +215,6 @@
             </div>
         </section>
 
-        <!-- SEÇÃO FORMAÇÃO ACADÊMICA -->
         <section id="formacao" class="content-section">
             <div class="header-center">
                 <span class="label">FORMAÇÃO ACADÊMICA</span>
@@ -283,7 +279,6 @@
             </div>
         </section>
 
-        <!-- SEÇÃO NOTA DE CORTE ENEM -->
         <section id="enem" class="content-section">
             <div class="grid-layout reverse">
                 <div class="text-box">
@@ -379,7 +374,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Carlos Eduardo</h4><span class="comment-date"><i class="far fa-clock"></i> Há 2 dias</span></div>
                             <p class="comment-body">Excelente site! As informações sobre as notas de corte do ENEM me ajudaram muito a escolher minha faculdade. Parabéns pelo conteúdo!</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">12</span></button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 12</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                     <div class="comment-item">
@@ -387,7 +382,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Mariana Costa</h4><span class="comment-date"><i class="far fa-clock"></i> Há 5 dias</span></div>
                             <p class="comment-body">Muito bom o site! As médias salariais estão bem atualizadas. Já compartilhei com meus amigos que também estão pensando em seguir na área de TI.</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">8</span></button><button class="comment-reply"><i class="far fa-comment</span></button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 8</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                     <div class="comment-item">
@@ -395,7 +390,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Rafael Oliveira</h4><span class="comment-date"><i class="far fa-clock"></i> Há 1 semana</span></div>
                             <p class="comment-body">Estou no 3º ano do ensino médio e esse site me deu uma direção do que esperar da carreira em TI. Muito obrigado!</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">15</span></button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 15</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                 </div>
@@ -553,4 +548,145 @@
                 }
             }
             
-            if (msg.includes('enem
+            if (msg.includes('enem') || msg.includes('nota de corte')) {
+                return `📚 **Notas de corte ENEM para cursos de TI:**\n\n• **Sisu (Ampla Concorrência):** 780-820 pts\n• **Institutos Federais:** 710-750 pts\n• **ProUni (Bolsa 100%):** 670-720 pts\n• **FIES:** 450-600 pts\n\n💡 *Dica: USP, UNICAMP e UNESP têm vestibulares próprios!*`;
+            }
+            
+            if (msg.includes('programação') || msg.includes('linguagem') || msg.includes('codar')) {
+                return `💻 **Linguagens de programação mais populares:**\n\n• **JavaScript** - Web, Front-end, Back-end\n• **Python** - Dados, IA, Automação\n• **Java** - Empresas, Android\n• **TypeScript** - JavaScript com tipos\n• **C#** - Jogos, Windows, Back-end\n\nQual você tem interesse em aprender? Posso te dar dicas! 🚀`;
+            }
+            
+            if (msg.includes('carreira') || msg.includes('trabalhar com ti') || msg.includes('área de ti')) {
+                return `🚀 **Áreas em alta em TI:**\n\n1️⃣ **Desenvolvimento** (Front-end, Back-end, Mobile)\n2️⃣ **Dados** (Cientista, Analista, Engenheiro)\n3️⃣ **Segurança da Informação** (Cybersecurity)\n4️⃣ **Cloud Computing** (AWS, Azure, GCP)\n5️⃣ **DevOps** (Infraestrutura como código)\n6️⃣ **Inteligência Artificial e Machine Learning**\n\nQual área mais te interessa? Posso dar dicas específicas! 💡`;
+            }
+            
+            if (msg.includes('estudar') || msg.includes('aprender') || msg.includes('curso') || msg.includes('faculdade')) {
+                return `🎓 **Caminhos para entrar em TI:**\n\n• **Graduação:** 2-5 anos (Bacharelado/Tecnólogo)\n• **Cursos Online:** Alura, Udemy, Coursera, DIO\n• **Bootcamps:** Trybe, Rocketseat (3-6 meses intensivos)\n• **Certificações:** AWS, Cisco, CompTIA, Microsoft\n\n💡 *O mais importante é praticar e construir portfólio!*`;
+            }
+            
+            if (msg.includes('futebol') || msg.includes('time') || msg.includes('copa')) {
+                return `⚽ Futebol é paixão nacional! Não torço para nenhum time específico, mas sei que o Brasileirão é muito disputado.\n\nQual é o seu time do coração? 🏆`;
+            }
+            
+            if (msg.includes('comida') || msg.includes('receita') || msg.includes('prato')) {
+                return `🍽️ Comida é sempre um ótimo assunto! Adoro falar sobre gastronomia.\n\nQual sua comida favorita? Me conta que posso te dar uma dica de receita! 🍕🍝🍣`;
+            }
+            
+            if (msg.includes('filme') || msg.includes('série') || msg.includes('netflix')) {
+                return `🎬 **Recomendações de filmes/séries tech:**\n\n• **O Jogo da Imitação** - Alan Turing\n• **A Rede Social** - História do Facebook\n• **Mr. Robot** - Série sobre hacking\n• **Black Mirror** - Tecnologia e sociedade\n\nJá assistiu algum desses? 🍿`;
+            }
+            
+            if (msg.includes('amor') || msg.includes('namorar') || msg.includes('paixão')) {
+                return `💕 Amor é um assunto lindo e complexo!\n\nMe conta mais sobre o que está acontecendo. Posso tentar te dar um conselho ou apenas ouvir se preferir.\n\nO coração sabe o caminho, mas às vezes precisa de um tempinho para enxergar com clareza. 💙`;
+            }
+            
+            if (msg.includes('triste') || msg.includes('difícil') || msg.includes('desabafar')) {
+                return `💙 Sinto muito que você esteja passando por isso.\n\nQuer conversar? Estou aqui para ouvir. Às vezes, colocar os sentimentos para fora já ajuda a aliviar.\n\nSe quiser falar mais, pode compartilhar. Estou aqui para te apoiar! 🫂`;
+            }
+            
+            if (msg.includes('viagem') || msg.includes('viajar') || msg.includes('praia')) {
+                return `✈️ Viajar é uma das melhores experiências!\n\nAlguns destinos incríveis no Brasil:\n🏖️ **Fernando de Noronha** - Praias paradisíacas\n🏔️ **Gramado** - Clima europeu\n🌊 **Rio de Janeiro** - Cristo e praias\n\nQual lugar você sonha em conhecer? 🌎`;
+            }
+            
+            const respostas = [
+                `Que interessante${userName ? ', ' + userName : ''}! 😊 Me conte mais sobre isso.`,
+                `Gostei do que você disse! Como você se sente em relação a isso? 🤔`,
+                `Adoro quando você compartilha suas ideias! Continue falando, estou prestando atenção 💙`,
+                `Hmm, isso me faz pensar... Qual sua opinião sobre o assunto? 🧐`,
+                `Que legal! Você tem uma visão muito interessante. Fale mais sobre isso! 🌟`
+            ];
+            return respostas[Math.floor(Math.random() * respostas.length)];
+        }
+        
+        function sendMessage() {
+            const text = aiUserInput.value.trim();
+            if (!text) return;
+            
+            addMessage(text, true);
+            aiUserInput.value = '';
+            aiUserInput.style.height = 'auto';
+            
+            showTyping();
+            
+            setTimeout(() => {
+                removeTyping();
+                const response = getChatGPTResponse(text, userName);
+                addMessage(response, false);
+                
+                if (response.includes('Prazer em te conhecer')) {
+                    const match = text.match(/(?:meu nome é|chamo|sou o|sou a|me chamo)\s+([A-Za-zÀ-ÖØ-öø-ÿ]+)/i);
+                    if (match) userName = match[1];
+                }
+            }, 1000 + Math.random() * 500);
+        }
+        
+        if (aiSend) {
+            aiSend.addEventListener('click', sendMessage);
+            aiUserInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+        }
+        
+        suggestions.forEach(btn => {
+            btn.addEventListener('click', () => {
+                aiUserInput.value = btn.textContent;
+                sendMessage();
+            });
+        });
+        
+        document.getElementById('searchForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const term = e.target.querySelector('.search-input').value.toLowerCase();
+            const sections = {
+                'sobre': 'sobre', 'profissão': 'sobre', 'ti': 'sobre',
+                'salário': 'salario', 'salarios': 'salario',
+                'eua': 'salario-eua', 'usa': 'salario-eua',
+                'enem': 'enem', 'formação': 'formacao', 'faculdade': 'formacao'
+            };
+            for (let [key, id] of Object.entries(sections)) {
+                if (term.includes(key)) {
+                    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+                    return;
+                }
+            }
+            alert('Termo não encontrado. Tente: sobre, salário, eua, enem, formação');
+        });
+        
+        document.getElementById('commentForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert(`Obrigado pelo comentário, ${document.getElementById('commentName').value}!`);
+            e.target.reset();
+        });
+        
+        document.querySelectorAll('.comment-like').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                const countSpan = this.querySelector('.like-count');
+                if (countSpan) {
+                    let count = parseInt(countSpan.textContent);
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        countSpan.textContent = count + 1;
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        countSpan.textContent = count - 1;
+                    }
+                } else {
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
