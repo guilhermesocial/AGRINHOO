@@ -3,213 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroIA PRO | Inteligência Artificial de Alta Precisão</title>
+    <title>AgroIA ULTRA | The Future of Precision Farming</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- ScrollReveal para animações de entrada -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navegação Premium -->
+    <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Linhas de Fundo Animadas -->
+    <div class="bg-lines">
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Navegação Futurista -->
     <nav>
         <div class="container nav-content">
             <div class="logo">
-                <i class="fas fa-microchip"></i> AGRO<span>IA</span><small>PRO</small>
+                <i class="fas fa-atom"></i> AGRO<span>IA</span><small>ULTRA</small>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#stats">Impacto</a></li>
-                <li><a href="#servicos">Soluções</a></li>
-                <li><a href="#timeline">Processo</a></li>
-                <li><a href="#faq">Dúvidas</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#tech">Tecnologia</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-            <a href="#newsletter" class="nav-btn">Acessar Painel</a>
+            <div class="nav-actions">
+                <a href="#" class="btn-outline">Login</a>
+                <a href="#contato" class="btn-glow">Agendar Demo</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section Cinematográfica -->
     <header id="home">
         <div class="container hero">
-            <div class="hero-text">
-                <div class="badge">Tecnologia de Nova Geração</div>
-                <h1>Revolucionando a <span>Agricultura</span> com Dados</h1>
-                <p>Maximize sua produtividade e minimize custos com a plataforma de IA mais avançada do mercado brasileiro. Decisões baseadas em dados, não em palpites.</p>
-                <div class="hero-btns">
-                    <a href="#servicos" class="btn btn-primary">Começar Agora <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://www.youtube.com" target="_blank" class="btn btn-video"><i class="fas fa-play"></i> Ver em Ação</a>
+            <div class="hero-content">
+                <div class="reveal-tag">AI-POWERED AGRICULTURE 4.0</div>
+                <h1 class="glitch-text" data-text="O CAMPO NUNCA FOI TÃO INTELIGENTE">O CAMPO NUNCA FOI TÃO <span>INTELIGENTE</span></h1>
+                <p>Sincronize sua produção com o poder da computação quântica e inteligência artificial preditiva. Aumente sua margem de lucro em tempo real.</p>
+                <div class="hero-cta">
+                    <a href="#tech" class="btn-main">Explorar Ecossistema <i class="fas fa-bolt"></i></a>
+                    <div class="users-count">
+                        <div class="user-imgs">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="User">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="User">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="User">
+                        </div>
+                        <span>+2.5k Produtores Ativos</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1560343438-1049e000787e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Drone sobrevoando plantação">
-                    <div class="floating-card card-1">
-                        <i class="fas fa-satellite"></i>
-                        <span>Análise Satelital Ativa</span>
-                    </div>
-                    <div class="floating-card card-2">
-                        <i class="fas fa-check"></i>
-                        <span>98% de Precisão</span>
-                    </div>
+            <div class="hero-visual">
+                <div class="drone-container">
+                    <img src="https://images.unsplash.com/photo-1560343438-1049e000787e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Drone Agro" class="main-drone">
+                    <div class="data-node node-1"><span>CO2 -12%</span></div>
+                    <div class="data-node node-2"><span>H2O OK</span></div>
+                    <div class="data-node node-3"><span>GPS LOCK</span></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Seção de Estatísticas -->
-    <section id="stats" class="container">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>+45%</h3>
-                <p>Produtividade</p>
-            </div>
-            <div class="stat-item">
-                <h3>-30%</h3>
-                <p>Uso de Insumos</p>
-            </div>
-            <div class="stat-item">
-                <h3>24/7</h3>
-                <p>Monitoramento</p>
-            </div>
-            <div class="stat-item">
-                <h3>10k+</h3>
-                <p>Hectares Monitorados</p>
-            </div>
+    <!-- Seção de Tecnologia (Cartões 3D ) -->
+    <section id="tech" class="container">
+        <div class="section-title">
+            <span class="sub">NOSSO ECOSSISTEMA</span>
+            <h2>Tecnologia <span>Sem Fronteiras</span></h2>
         </div>
-    </section>
-
-    <!-- Seção de Soluções -->
-    <section id="servicos" class="bg-darker">
-        <div class="container">
-            <div class="section-header">
-                <h2>Soluções <span>Especializadas</span></h2>
-                <p>Ferramentas desenhadas para cada etapa do seu ciclo produtivo.</p>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="card-inner">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Edge Computing</h3>
+                    <p>Processamento local ultra-rápido para decisões instantâneas sem depender de nuvem.</p>
+                </div>
             </div>
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="icon-box"><i class="fas fa-seedling"></i></div>
-                    <h3>Saúde da Planta</h3>
-                    <p>Detecção precoce de deficiências nutricionais e estresse hídrico via IA.</p>
-                    <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Mapas de Calor</li>
-                        <li><i class="fas fa-check"></i> Alertas Mobile</li>
-                    </ul>
+            <div class="tech-card active">
+                <div class="card-inner">
+                    <i class="fas fa-satellite-dish"></i>
+                    <h3>Hyper-Spectral</h3>
+                    <p>Imagens de satélite com 150+ bandas de frequência para análise molecular do solo.</p>
                 </div>
-                <div class="solution-card featured">
-                    <div class="icon-box"><i class="fas fa-cloud-sun"></i></div>
-                    <h3>Clima Preditivo</h3>
-                    <p>Microclima local processado por redes neurais para janelas de plantio perfeitas.</p>
-                    <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Precisão Hiper-local</li>
-                        <li><i class="fas fa-check"></i> Histórico Comparativo</li>
-                    </ul>
-                </div>
-                <div class="solution-card">
-                    <div class="icon-box"><i class="fas fa-bug"></i></div>
-                    <h3>Controle de Pragas</h3>
-                    <p>Identificação de insetos e patógenos com recomendação de aplicação variável.</p>
-                    <ul class="card-list">
-                        <li><i class="fas fa-check"></i> Redução de Químicos</li>
-                        <li><i class="fas fa-check"></i> Laudos Automáticos</li>
-                    </ul>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neural Networks</h3>
+                    <p>Algoritmos que aprendem com cada safra, otimizando o futuro automaticamente.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline de Implementação -->
-    <section id="timeline" class="container">
-        <div class="section-header">
-            <h2>Jornada de <span>Sucesso</span></h2>
-            <p>Como transformamos sua fazenda em uma potência tecnológica.</p>
-        </div>
-        <div class="timeline">
-            <div class="timeline-step">
-                <div class="step-number">01</div>
-                <div class="step-content">
-                    <h4>Mapeamento Digital</h4>
-                    <p>Escaneamos toda a propriedade gerando um gêmeo digital 3D.</p>
-                </div>
-            </div>
-            <div class="timeline-step">
-                <div class="step-number">02</div>
-                <div class="step-content">
-                    <h4>Integração de Sensores</h4>
-                    <p>Instalação de IoT e conexão com maquinário existente.</p>
-                </div>
-            </div>
-            <div class="timeline-step">
-                <div class="step-number">03</div>
-                <div class="step-content">
-                    <h4>Treinamento da IA</h4>
-                    <p>Ajustamos nossos algoritmos para a realidade do seu solo e cultura.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="bg-darker">
-        <div class="container">
-            <div class="section-header">
-                <h2>Perguntas <span>Frequentes</span></h2>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">Preciso de internet em toda a fazenda? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Não. Nossa tecnologia trabalha com processamento em borda (Edge Computing ) e sincroniza os dados quando houver conexão disponível.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">A IA substitui o agrônomo? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">De forma alguma. A AgroIA é uma ferramenta de suporte à decisão que potencializa o trabalho do profissional, fornecendo dados precisos.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section id="newsletter" class="container">
-        <div class="newsletter-box">
-            <h2>Receba Insights Exclusivos</h2>
-            <p>Junte-se a mais de 5.000 produtores que já estão no futuro.</p>
-            <form class="news-form">
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo">
-                    <i class="fas fa-microchip"></i> AGRO<span>IA</span>
-                </div>
-                <p>Líder em tecnologia para o agronegócio inteligente na América Latina.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                    <li><a href="#">Blog</a></li>
+    <!-- Dashboard Preview (Gráficos CSS) -->
+    <section id="dashboard" class="bg-alt">
+        <div class="container dash-container">
+            <div class="dash-text">
+                <h2>Controle Total na <span>Palma da Mão</span></h2>
+                <p>Nossa interface intuitiva transforma dados complexos em ações lucrativas e simples.</p>
+                <ul class="dash-features">
+                    <li><i class="fas fa-check-double"></i> Relatórios em Tempo Real</li>
+                    <li><i class="fas fa-check-double"></i> Integração com Maquinário</li>
+                    <li><i class="fas fa-check-double"></i> Alertas de Risco via WhatsApp</li>
                 </ul>
             </div>
-            <div class="footer-social">
-                <h4>Siga-nos</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="dash-preview">
+                <div class="glass-panel">
+                    <div class="panel-header">
+                        <span>PRODUTIVIDADE ESTIMADA</span>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="bar" style="--h: 60%"></div>
+                        <div class="bar" style="--h: 40%"></div>
+                        <div class="bar" style="--h: 85%"></div>
+                        <div class="bar" style="--h: 70%"></div>
+                        <div class="bar" style="--h: 95%"></div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="foot-item"><span>SOJA</span><strong>+18%</strong></div>
+                        <div class="foot-item"><span>MILHO</span><strong>+24%</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Futurista -->
+    <section id="contato" class="container">
+        <div class="cta-box">
+            <div class="cta-content">
+                <h2>Pronto para o <span>Próximo Nível?</span></h2>
+                <p>Receba um diagnóstico gratuito da sua fazenda em 24 horas.</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Digite seu e-mail corporativo">
+                    <button type="submit">Solicitar Acesso <i class="fas fa-chevron-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">
+                    <i class="fas fa-atom"></i> AGRO<span>IA</span>
+                </div>
+                <p>Pioneiros na fusão entre agronomia e inteligência artificial avançada.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>SOLUÇÕES</h4>
+                    <a href="#">Drones</a>
+                    <a href="#">Satélites</a>
+                    <a href="#">Software</a>
+                </div>
+                <div class="link-col">
+                    <h4>SOCIAL</h4>
+                    <div class="social-row">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 AgroIA Pro Systems. Todos os direitos reservados.</p>
+            <p>&copy; 2026 AgroIA Ultra Division. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Scripts de Animação -->
+    <script>
+        // Inicialização do ScrollReveal
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '60px',
+            duration: 2000,
+            delay: 200,
+            reset: false
+        });
+
+        sr.reveal('.hero-content, .section-title');
+        sr.reveal('.tech-card', { interval: 200 });
+        sr.reveal('.dash-text', { origin: 'left' });
+        sr.reveal('.dash-preview', { origin: 'right' });
+        sr.reveal('.cta-box');
+
+        // Cursor Personalizado
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+            follower.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        });
+    </script>
 </body>
 </html>
