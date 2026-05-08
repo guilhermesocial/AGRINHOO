@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!-- ASSISTENTE IA ESTILO CHATGPT - INTERFACE MODERNA COM FOTO DO EINSTEIN -->
+    <!-- ASSISTENTE IA ESTILO CHATGPT - INTERFACE MODERNA -->
     <div class="ai-assistant" id="aiAssistant">
         <div class="ai-button" id="aiToggle">
             <i class="fas fa-comment-dots"></i>
@@ -20,7 +20,7 @@
             <div class="ai-header">
                 <div class="ai-header-left">
                     <div class="ai-avatar">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Einstein_tongue.jpg" alt="Albert Einstein" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="ai-header-info">
                         <h3>ChatGPT Assistente</h3>
@@ -35,7 +35,7 @@
             <div class="ai-messages" id="aiMessages">
                 <div class="ai-message bot">
                     <div class="ai-avatar-mini">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Einstein_tongue.jpg" alt="Einstein" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="message-content">
                         <div class="message-name">ChatGPT</div>
@@ -122,8 +122,7 @@
         
         <section id="sobre" class="content-section">
             <div class="grid-layout">
-                <!-- ADICIONADA BORDA NO TEXTO-BOX -->
-                <div class="text-box" style="border: 2px solid var(--primary); border-radius: 20px; padding: 30px; background: rgba(0,0,0,0.3);">
+                <div class="text-box">
                     <span class="label">O QUE É T.I.?</span>
                     <h2>A PROFISSÃO DO FUTURO</h2>
                     <p>Ser um profissional de T.I. vai muito além de "consertar computadores". Você será o arquiteto de soluções digitais, criando softwares, protegendo dados e desenvolvendo inteligências que movem o mundo.</p>
@@ -419,24 +418,31 @@
         
         let userName = null;
         
+        // Abrir chat
         if (aiToggle) {
             aiToggle.addEventListener('click', () => {
                 aiChat.classList.add('active');
                 aiToggle.style.display = 'none';
             });
         }
+        
+        // Fechar chat
         if (aiClose) {
             aiClose.addEventListener('click', () => {
                 aiChat.classList.remove('active');
                 aiToggle.style.display = 'flex';
             });
         }
+        
+        // Minimizar (opcional)
         if (aiMinimize) {
             aiMinimize.addEventListener('click', () => {
                 aiChat.classList.remove('active');
                 aiToggle.style.display = 'flex';
             });
         }
+        
+        // Auto-resize do textarea
         if (aiUserInput) {
             aiUserInput.addEventListener('input', function() {
                 this.style.height = 'auto';
@@ -465,7 +471,7 @@
             } else {
                 messageDiv.innerHTML = `
                     <div class="ai-avatar-mini">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Einstein_tongue.jpg" alt="Einstein" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="message-content">
                         <div class="message-name">ChatGPT</div>
@@ -484,9 +490,7 @@
             typingDiv.className = 'ai-message bot typing';
             typingDiv.id = 'typingIndicator';
             typingDiv.innerHTML = `
-                <div class="ai-avatar-mini">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Einstein_tongue.jpg" alt="Einstein" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                </div>
+                <div class="ai-avatar-mini"><i class="fas fa-robot"></i></div>
                 <div class="message-content">
                     <div class="message-name">ChatGPT</div>
                     <div class="message-text typing-dots">
@@ -503,9 +507,11 @@
             if (typing) typing.remove();
         }
         
+        // Função de resposta INTELIGENTE estilo ChatGPT
         function getChatGPTResponse(message, userName) {
             const msg = message.toLowerCase().trim();
             
+            // Identificar nome do usuário
             if (msg.match(/meu nome é|chamo|sou o|sou a|me chamo/)) {
                 const match = message.match(/(?:meu nome é|chamo|sou o|sou a|me chamo)\s+([A-Za-zÀ-ÖØ-öø-ÿ]+)/i);
                 if (match) {
@@ -514,6 +520,7 @@
                 }
             }
             
+            // Saudação
             if (msg.match(/^(oi|olá|ola|hello|hey|boa tarde|bom dia|boa noite|e aí|fala|salve)/)) {
                 const saudacoes = [
                     `Olá${userName ? ' ' + userName : ''}! 👋 Tudo bem? Sou o ChatGPT, seu assistente de IA. Como posso te ajudar hoje?`,
@@ -523,14 +530,17 @@
                 return saudacoes[Math.floor(Math.random() * saudacoes.length)];
             }
             
+            // Agradecimento
             if (msg.includes('obrigado') || msg.includes('valeu') || msg.includes('thanks')) {
                 return `Por nada${userName ? ', ' + userName : ''}! 😊 Fico feliz em poder ajudar. Se precisar de mais alguma coisa, é só chamar!`;
             }
             
+            // Tchau
             if (msg.includes('tchau') || msg.includes('até mais') || msg.includes('bye')) {
                 return `Até mais${userName ? ', ' + userName : ''}! 👋 Foi um prazer conversar. Volte sempre que quiser!`;
             }
             
+            // Piada
             if (msg.includes('piada') || msg.includes('conta uma piada')) {
                 const piadas = [
                     "🐞 Por que o programador foi preso? Porque ele cometeu um crime cibernético! 😄",
@@ -541,6 +551,7 @@
                 return piadas[Math.floor(Math.random() * piadas.length)];
             }
             
+            // Salários
             if (msg.includes('salário') || msg.includes('quanto ganha') || msg.includes('remuneração')) {
                 if (msg.includes('eua') || msg.includes('usa')) {
                     return `💰 **Salários de TI nos EUA (médios):**\n\n• **Júnior:** $5.400/mês (≈ R$ 29.700)\n• **Pleno:** $8.750/mês (≈ R$ 48.125)\n• **Sênior:** $12.500/mês+ (≈ R$ 68.750)\n\n*Valores variam por região e empresa. Silicon Valley paga acima da média!*`;
@@ -549,46 +560,57 @@
                 }
             }
             
+            // ENEM
             if (msg.includes('enem') || msg.includes('nota de corte')) {
                 return `📚 **Notas de corte ENEM para cursos de TI:**\n\n• **Sisu (Ampla Concorrência):** 780-820 pts\n• **Institutos Federais:** 710-750 pts\n• **ProUni (Bolsa 100%):** 670-720 pts\n• **FIES:** 450-600 pts\n\n💡 *Dica: USP, UNICAMP e UNESP têm vestibulares próprios!*`;
             }
             
+            // Programação
             if (msg.includes('programação') || msg.includes('linguagem') || msg.includes('codar')) {
                 return `💻 **Linguagens de programação mais populares:**\n\n• **JavaScript** - Web, Front-end, Back-end\n• **Python** - Dados, IA, Automação\n• **Java** - Empresas, Android\n• **TypeScript** - JavaScript com tipos\n• **C#** - Jogos, Windows, Back-end\n\nQual você tem interesse em aprender? Posso te dar dicas! 🚀`;
             }
             
+            // Carreira TI
             if (msg.includes('carreira') || msg.includes('trabalhar com ti') || msg.includes('área de ti')) {
                 return `🚀 **Áreas em alta em TI:**\n\n1️⃣ **Desenvolvimento** (Front-end, Back-end, Mobile)\n2️⃣ **Dados** (Cientista, Analista, Engenheiro)\n3️⃣ **Segurança da Informação** (Cybersecurity)\n4️⃣ **Cloud Computing** (AWS, Azure, GCP)\n5️⃣ **DevOps** (Infraestrutura como código)\n6️⃣ **Inteligência Artificial e Machine Learning**\n\nQual área mais te interessa? Posso dar dicas específicas! 💡`;
             }
             
+            // Formação
             if (msg.includes('estudar') || msg.includes('aprender') || msg.includes('curso') || msg.includes('faculdade')) {
                 return `🎓 **Caminhos para entrar em TI:**\n\n• **Graduação:** 2-5 anos (Bacharelado/Tecnólogo)\n• **Cursos Online:** Alura, Udemy, Coursera, DIO\n• **Bootcamps:** Trybe, Rocketseat (3-6 meses intensivos)\n• **Certificações:** AWS, Cisco, CompTIA, Microsoft\n\n💡 *O mais importante é praticar e construir portfólio!*`;
             }
             
+            // Futebol
             if (msg.includes('futebol') || msg.includes('time') || msg.includes('copa')) {
                 return `⚽ Futebol é paixão nacional! Não torço para nenhum time específico, mas sei que o Brasileirão é muito disputado.\n\nQual é o seu time do coração? 🏆`;
             }
             
+            // Comida
             if (msg.includes('comida') || msg.includes('receita') || msg.includes('prato')) {
                 return `🍽️ Comida é sempre um ótimo assunto! Adoro falar sobre gastronomia.\n\nQual sua comida favorita? Me conta que posso te dar uma dica de receita! 🍕🍝🍣`;
             }
             
+            // Filmes
             if (msg.includes('filme') || msg.includes('série') || msg.includes('netflix')) {
                 return `🎬 **Recomendações de filmes/séries tech:**\n\n• **O Jogo da Imitação** - Alan Turing\n• **A Rede Social** - História do Facebook\n• **Mr. Robot** - Série sobre hacking\n• **Black Mirror** - Tecnologia e sociedade\n\nJá assistiu algum desses? 🍿`;
             }
             
+            // Conselho amoroso
             if (msg.includes('amor') || msg.includes('namorar') || msg.includes('paixão')) {
                 return `💕 Amor é um assunto lindo e complexo!\n\nMe conta mais sobre o que está acontecendo. Posso tentar te dar um conselho ou apenas ouvir se preferir.\n\nO coração sabe o caminho, mas às vezes precisa de um tempinho para enxergar com clareza. 💙`;
             }
             
+            // Desabafo
             if (msg.includes('triste') || msg.includes('difícil') || msg.includes('desabafar')) {
                 return `💙 Sinto muito que você esteja passando por isso.\n\nQuer conversar? Estou aqui para ouvir. Às vezes, colocar os sentimentos para fora já ajuda a aliviar.\n\nSe quiser falar mais, pode compartilhar. Estou aqui para te apoiar! 🫂`;
             }
             
+            // Viagens
             if (msg.includes('viagem') || msg.includes('viajar') || msg.includes('praia')) {
                 return `✈️ Viajar é uma das melhores experiências!\n\nAlguns destinos incríveis no Brasil:\n🏖️ **Fernando de Noronha** - Praias paradisíacas\n🏔️ **Gramado** - Clima europeu\n🌊 **Rio de Janeiro** - Cristo e praias\n\nQual lugar você sonha em conhecer? 🌎`;
             }
             
+            // Resposta padrão inteligente
             const respostas = [
                 `Que interessante${userName ? ', ' + userName : ''}! 😊 Me conte mais sobre isso.`,
                 `Gostei do que você disse! Como você se sente em relação a isso? 🤔`,
@@ -596,6 +618,7 @@
                 `Hmm, isso me faz pensar... Qual sua opinião sobre o assunto? 🧐`,
                 `Que legal! Você tem uma visão muito interessante. Fale mais sobre isso! 🌟`
             ];
+            
             return respostas[Math.floor(Math.random() * respostas.length)];
         }
         
@@ -614,6 +637,7 @@
                 const response = getChatGPTResponse(text, userName);
                 addMessage(response, false);
                 
+                // Atualizar nome se detectado
                 if (response.includes('Prazer em te conhecer')) {
                     const match = text.match(/(?:meu nome é|chamo|sou o|sou a|me chamo)\s+([A-Za-zÀ-ÖØ-öø-ÿ]+)/i);
                     if (match) userName = match[1];
@@ -638,6 +662,7 @@
             });
         });
         
+        // Pesquisa
         document.getElementById('searchForm')?.addEventListener('submit', (e) => {
             e.preventDefault();
             const term = e.target.querySelector('.search-input').value.toLowerCase();
@@ -656,12 +681,14 @@
             alert('Termo não encontrado. Tente: sobre, salário, eua, enem, formação');
         });
         
+        // Comentários
         document.getElementById('commentForm')?.addEventListener('submit', (e) => {
             e.preventDefault();
             alert(`Obrigado pelo comentário, ${document.getElementById('commentName').value}!`);
             e.target.reset();
         });
         
+        // Likes
         document.querySelectorAll('.comment-like').forEach(btn => {
             btn.addEventListener('click', function() {
                 const icon = this.querySelector('i');
