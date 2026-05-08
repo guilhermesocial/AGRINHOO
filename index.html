@@ -3,211 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroIA ULTRA | The Future of Precision Farming</title>
+    <title>AgroIA ELITE | The Future of Cyber-Agriculture</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-    <!-- ScrollReveal para animações de entrada -->
+    <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cursor Personalizado -->
+    <!-- Cursor Personalizado Elite -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <!-- Linhas de Fundo Animadas -->
-    <div class="bg-lines">
-        <span></span><span></span><span></span><span></span>
+    <!-- Live Data Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker__item"><i class="fas fa-chart-line"></i> SOJA: +1.2%</div>
+            <div class="ticker__item"><i class="fas fa-cloud-sun"></i> CLIMA: 24°C - IDEAL</div>
+            <div class="ticker__item"><i class="fas fa-bolt"></i> ENERGIA: 98% SOLAR</div>
+            <div class="ticker__item"><i class="fas fa-microchip"></i> IA STATUS: ONLINE</div>
+            <div class="ticker__item"><i class="fas fa-chart-line"></i> MILHO: +0.8%</div>
+        </div>
     </div>
 
-    <!-- Navegação Futurista -->
+    <!-- Navegação Cyber -->
     <nav>
         <div class="container nav-content">
             <div class="logo">
-                <i class="fas fa-atom"></i> AGRO<span>IA</span><small>ULTRA</small>
+                <i class="fas fa-dna"></i> AGRO<span>IA</span><small>ELITE</small>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#tech">Tecnologia</a></li>
-                <li><a href="#impacto">Impacto</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#home">Terminal</a></li>
+                <li><a href="#scanner">Scanner</a></li>
+                <li><a href="#stats">Performance</a></li>
+                <li><a href="#contato">Conectar</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#" class="btn-outline">Login</a>
-                <a href="#contato" class="btn-glow">Agendar Demo</a>
+                <a href="#contato" class="btn-neon">SYSTEM START</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section Cinematográfica -->
+    <!-- Hero Section Ultra Dark -->
     <header id="home">
         <div class="container hero">
             <div class="hero-content">
-                <div class="reveal-tag">AI-POWERED AGRICULTURE 4.0</div>
-                <h1 class="glitch-text" data-text="O CAMPO NUNCA FOI TÃO INTELIGENTE">O CAMPO NUNCA FOI TÃO <span>INTELIGENTE</span></h1>
-                <p>Sincronize sua produção com o poder da computação quântica e inteligência artificial preditiva. Aumente sua margem de lucro em tempo real.</p>
-                <div class="hero-cta">
-                    <a href="#tech" class="btn-main">Explorar Ecossistema <i class="fas fa-bolt"></i></a>
-                    <div class="users-count">
-                        <div class="user-imgs">
-                            <img src="https://i.pravatar.cc/150?u=1" alt="User">
-                            <img src="https://i.pravatar.cc/150?u=2" alt="User">
-                            <img src="https://i.pravatar.cc/150?u=3" alt="User">
-                        </div>
-                        <span>+2.5k Produtores Ativos</span>
+                <div class="cyber-badge">QUANTUM CORE ACTIVE</div>
+                <h1 class="hero-title">O CAMPO <span>EVOLUIU</span> PARA O CÓDIGO</h1>
+                <p>Implemente a camada definitiva de inteligência na sua produção. Nossa rede neural processa 1.2TB de dados agrícolas por segundo para garantir sua colheita.</p>
+                <div class="hero-btns">
+                    <a href="#scanner" class="btn-cyber">INICIAR ESCANEAMENTO <i class="fas fa-crosshairs"></i></a>
+                    <div class="network-status">
+                        <div class="pulse-dot"></div>
+                        <span>NETWORK: LATENCY 2ms</span>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="drone-container">
-                    <!-- Imagem do Drone Real e de Alta Tecnologia -->
-                    <img src="https://images.unsplash.com/photo-1595913205263-99fce73d4fab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Drone Agrícola" class="main-drone">
-                    <div class="data-node node-1"><span>CO2 -12%</span></div>
-                    <div class="data-node node-2"><span>H2O OK</span></div>
-                    <div class="data-node node-3"><span>GPS LOCK</span></div>
+                <div class="drone-box">
+                    <!-- IMAGEM DO DRONE - CORREÇÃO DEFINITIVA -->
+                    <div class="image-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1527504429819-f12955e26dd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Drone Agrícola Elite" class="drone-img">
+                    <div class="scanner-line"></div>
+                    <div class="target-box t-1"></div>
+                    <div class="target-box t-2"></div>
+                    <div class="data-tag d-1">NPK LEVEL: 92%</div>
+                    <div class="data-tag d-2">PH STATUS: OPTIMAL</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Seção de Tecnologia (Cartões 3D ) -->
-    <section id="tech" class="container">
-        <div class="section-title">
-            <span class="sub">NOSSO ECOSSISTEMA</span>
-            <h2>Tecnologia <span>Sem Fronteiras</span></h2>
+    <!-- Seção de Scanner de Solo -->
+    <section id="scanner" class="container">
+        <div class="section-header">
+            <span class="cyber-text">SOIL SCANNER V2.0</span>
+            <h2>Visão de <span>Raio-X</span> do Solo</h2>
         </div>
-        <div class="tech-grid">
-            <div class="tech-card">
-                <div class="card-inner">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Edge Computing</h3>
-                    <p>Processamento local ultra-rápido para decisões instantâneas sem depender de nuvem.</p>
-                </div>
+        <div class="scanner-grid">
+            <div class="scan-card">
+                <div class="scan-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Mapeamento Multicamada</h3>
+                <p>Veja através da terra. Analisamos densidade, umidade e nutrientes em 5 camadas profundas.</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
             </div>
-            <div class="tech-card active">
-                <div class="card-inner">
-                    <i class="fas fa-satellite-dish"></i>
-                    <h3>Hyper-Spectral</h3>
-                    <p>Imagens de satélite com 150+ bandas de frequência para análise molecular do solo.</p>
-                </div>
-            </div>
-            <div class="tech-card">
-                <div class="card-inner">
-                    <i class="fas fa-brain"></i>
-                    <h3>Neural Networks</h3>
-                    <p>Algoritmos que aprendem com cada safra, otimizando o futuro automaticamente.</p>
-                </div>
+            <div class="scan-card">
+                <div class="scan-icon"><i class="fas fa-temperature-high"></i></div>
+                <h3>Análise Térmica</h3>
+                <p>Identifique focos de calor e estresse hídrico antes mesmo de serem visíveis a olho nu.</p>
+                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Dashboard Preview (Gráficos CSS) -->
-    <section id="dashboard" class="bg-alt">
-        <div class="container dash-container">
-            <div class="dash-text">
-                <h2>Controle Total na <span>Palma da Mão</span></h2>
-                <p>Nossa interface intuitiva transforma dados complexos em ações lucrativas e simples.</p>
-                <ul class="dash-features">
-                    <li><i class="fas fa-check-double"></i> Relatórios em Tempo Real</li>
-                    <li><i class="fas fa-check-double"></i> Integração com Maquinário</li>
-                    <li><i class="fas fa-check-double"></i> Alertas de Risco via WhatsApp</li>
-                </ul>
-            </div>
-            <div class="dash-preview">
-                <div class="glass-panel">
-                    <div class="panel-header">
-                        <span>PRODUTIVIDADE ESTIMADA</span>
-                        <div class="status-dot"></div>
-                    </div>
-                    <div class="chart-container">
-                        <div class="bar" style="--h: 60%"></div>
-                        <div class="bar" style="--h: 40%"></div>
-                        <div class="bar" style="--h: 85%"></div>
-                        <div class="bar" style="--h: 70%"></div>
-                        <div class="bar" style="--h: 95%"></div>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="foot-item"><span>SOJA</span><strong>+18%</strong></div>
-                        <div class="foot-item"><span>MILHO</span><strong>+24%</strong></div>
-                    </div>
-                </div>
-            </div>
+    <!-- IA Assistant Floating -->
+    <div class="ai-assistant">
+        <div class="ai-avatar">
+            <i class="fas fa-robot"></i>
+            <div class="online-indicator"></div>
         </div>
-    </section>
+        <div class="ai-msg">
+            <span>AGRO-AI:</span>
+            <p>Olá! Detectei uma janela de plantio ideal para as próximas 48h. Deseja ver o relatório?</p>
+        </div>
+    </div>
 
-    <!-- Newsletter Futurista -->
+    <!-- Seção de CTA Futurista -->
     <section id="contato" class="container">
-        <div class="cta-box">
-            <div class="cta-content">
-                <h2>Pronto para o <span>Próximo Nível?</span></h2>
-                <p>Receba um diagnóstico gratuito da sua fazenda em 24 horas.</p>
-                <form class="cta-form">
-                    <input type="email" placeholder="Digite seu e-mail corporativo">
-                    <button type="submit">Solicitar Acesso <i class="fas fa-chevron-right"></i></button>
-                </form>
+        <div class="cyber-cta">
+            <div class="cta-inner">
+                <h2>Conecte sua Fazenda à <span>Rede Neural</span></h2>
+                <div class="input-group">
+                    <input type="email" placeholder="ENTER ACCESS KEY (EMAIL )">
+                    <button class="btn-send">ACCESS GRANTED <i class="fas fa-arrow-right"></i></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Footer Elite -->
     <footer>
         <div class="container footer-content">
-            <div class="footer-info">
+            <div class="footer-logo">
                 <div class="logo">
-                    <i class="fas fa-atom"></i> AGRO<span>IA</span>
+                    <i class="fas fa-dna"></i> AGRO<span>IA</span>
                 </div>
-                <p>Pioneiros na fusão entre agronomia e inteligência artificial avançada.</p>
+                <p>Onde a biologia encontra a tecnologia binária.</p>
             </div>
-            <div class="footer-links">
-                <div class="link-col">
-                    <h4>SOLUÇÕES</h4>
-                    <a href="#">Drones</a>
-                    <a href="#">Satélites</a>
-                    <a href="#">Software</a>
-                </div>
-                <div class="link-col">
-                    <h4>SOCIAL</h4>
-                    <div class="social-row">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 AgroIA Ultra Division. All Rights Reserved.</p>
+            <p>&copy; 2026 AGROIA ELITE DIVISION // ENCRYPTED CONNECTION</p>
         </div>
     </footer>
 
-    <!-- Scripts de Animação -->
+    <!-- Scripts de Animação Elite -->
     <script>
-        // Inicialização do ScrollReveal
         const sr = ScrollReveal({
             origin: 'bottom',
-            distance: '60px',
-            duration: 2000,
-            delay: 200,
+            distance: '50px',
+            duration: 1500,
+            delay: 100,
             reset: false
         });
 
-        sr.reveal('.hero-content, .section-title');
-        sr.reveal('.tech-card', { interval: 200 });
-        sr.reveal('.dash-text', { origin: 'left' });
-        sr.reveal('.dash-preview', { origin: 'right' });
-        sr.reveal('.cta-box');
+        sr.reveal('.hero-content, .section-header, .scan-card, .cyber-cta');
 
-        // Cursor Personalizado
+        // Cursor Follower
         const cursor = document.querySelector('.cursor');
         const follower = document.querySelector('.cursor-follower');
 
         document.addEventListener('mousemove', (e) => {
-            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-            follower.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
         });
     </script>
 </body>
