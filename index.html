@@ -3,116 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroIA | Inteligência Artificial no Campo</title>
+    <title>AgroIA PRO | Inteligência Artificial de Alta Precisão</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navegação Premium -->
     <nav>
         <div class="container nav-content">
             <div class="logo">
-                <i class="fas fa-microchip"></i> AGRO<span>IA</span>
+                <i class="fas fa-microchip"></i> AGRO<span>IA</span><small>PRO</small>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#stats">Impacto</a></li>
+                <li><a href="#servicos">Soluções</a></li>
+                <li><a href="#timeline">Processo</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
             </ul>
+            <a href="#newsletter" class="nav-btn">Acessar Painel</a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header id="home">
         <div class="container hero">
             <div class="hero-text">
-                <h1>O Futuro do Campo é <span>Inteligente</span></h1>
-                <p>Transformando o agronegócio através de algoritmos avançados, visão computacional e análise preditiva de dados.</p>
+                <div class="badge">Tecnologia de Nova Geração</div>
+                <h1>Revolucionando a <span>Agricultura</span> com Dados</h1>
+                <p>Maximize sua produtividade e minimize custos com a plataforma de IA mais avançada do mercado brasileiro. Decisões baseadas em dados, não em palpites.</p>
                 <div class="hero-btns">
-                    <a href="#tecnologias" class="btn btn-primary">Conhecer Soluções</a>
-                    <a href="#" class="btn btn-secondary">Ver Demo</a>
+                    <a href="#servicos" class="btn btn-primary">Começar Agora <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" class="btn btn-video"><i class="fas fa-play"></i> Ver em Ação</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1560343438-1049e000787e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drone sobrevoando plantação">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1560343438-1049e000787e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Drone sobrevoando plantação">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-satellite"></i>
+                        <span>Análise Satelital Ativa</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-check"></i>
+                        <span>98% de Precisão</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="tecnologias" class="container">
-        <div class="section-title">
-            <h2>Tecnologias de Ponta</h2>
-            <p>Soluções de IA integradas para máxima produtividade</p>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-eye"></i>
-                <h3>Visão Computacional</h3>
-                <p>Identificação automática de pragas e doenças através de análise de imagens em tempo real.</p>
+    <!-- Seção de Estatísticas -->
+    <section id="stats" class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>+45%</h3>
+                <p>Produtividade</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Análise Preditiva</h3>
-                <p>Modelos que preveem a produtividade da safra com base em dados climáticos e do solo.</p>
+            <div class="stat-item">
+                <h3>-30%</h3>
+                <p>Uso de Insumos</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-robot"></i>
-                <h3>Maquinário Autônomo</h3>
-                <p>Tratores e drones guiados por IA para plantio e colheita de precisão.</p>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Monitoramento</p>
+            </div>
+            <div class="stat-item">
+                <h3>10k+</h3>
+                <p>Hectares Monitorados</p>
             </div>
         </div>
     </section>
 
-    <section id="beneficios" class="bg-dark">
+    <!-- Seção de Soluções -->
+    <section id="servicos" class="bg-darker">
         <div class="container">
-            <div class="section-title">
-                <h2>Por que AgroIA?</h2>
+            <div class="section-header">
+                <h2>Soluções <span>Especializadas</span></h2>
+                <p>Ferramentas desenhadas para cada etapa do seu ciclo produtivo.</p>
             </div>
-            <div class="benefits-content">
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
-                    <div class="benefit-text">
-                        <h4>Redução de Custos</h4>
-                        <p>Otimização do uso de insumos e redução de desperdícios em até 30%.</p>
-                    </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                    <h3>Saúde da Planta</h3>
+                    <p>Detecção precoce de deficiências nutricionais e estresse hídrico via IA.</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> Mapas de Calor</li>
+                        <li><i class="fas fa-check"></i> Alertas Mobile</li>
+                    </ul>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
-                    <div class="benefit-text">
-                        <h4>Sustentabilidade</h4>
-                        <p>Menor impacto ambiental através da aplicação localizada de defensivos.</p>
-                    </div>
+                <div class="solution-card featured">
+                    <div class="icon-box"><i class="fas fa-cloud-sun"></i></div>
+                    <h3>Clima Preditivo</h3>
+                    <p>Microclima local processado por redes neurais para janelas de plantio perfeitas.</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> Precisão Hiper-local</li>
+                        <li><i class="fas fa-check"></i> Histórico Comparativo</li>
+                    </ul>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
-                    <div class="benefit-text">
-                        <h4>Decisões Assertivas</h4>
-                        <p>Insights baseados em dados reais para uma gestão estratégica do negócio.</p>
-                    </div>
+                <div class="solution-card">
+                    <div class="icon-box"><i class="fas fa-bug"></i></div>
+                    <h3>Controle de Pragas</h3>
+                    <p>Identificação de insetos e patógenos com recomendação de aplicação variável.</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> Redução de Químicos</li>
+                        <li><i class="fas fa-check"></i> Laudos Automáticos</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contato">
-        <div class="container footer-content">
-            <div class="footer-info">
+    <!-- Timeline de Implementação -->
+    <section id="timeline" class="container">
+        <div class="section-header">
+            <h2>Jornada de <span>Sucesso</span></h2>
+            <p>Como transformamos sua fazenda em uma potência tecnológica.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h4>Mapeamento Digital</h4>
+                    <p>Escaneamos toda a propriedade gerando um gêmeo digital 3D.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h4>Integração de Sensores</h4>
+                    <p>Instalação de IoT e conexão com maquinário existente.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h4>Treinamento da IA</h4>
+                    <p>Ajustamos nossos algoritmos para a realidade do seu solo e cultura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas <span>Frequentes</span></h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Preciso de internet em toda a fazenda? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Não. Nossa tecnologia trabalha com processamento em borda (Edge Computing ) e sincroniza os dados quando houver conexão disponível.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">A IA substitui o agrônomo? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">De forma alguma. A AgroIA é uma ferramenta de suporte à decisão que potencializa o trabalho do profissional, fornecendo dados precisos.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="container">
+        <div class="newsletter-box">
+            <h2>Receba Insights Exclusivos</h2>
+            <p>Junte-se a mais de 5.000 produtores que já estão no futuro.</p>
+            <form class="news-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
                 <div class="logo">
                     <i class="fas fa-microchip"></i> AGRO<span>IA</span>
                 </div>
-                <p>Inovação tecnológica para um agronegócio global e sustentável.</p>
+                <p>Líder em tecnologia para o agronegócio inteligente na América Latina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
             </div>
             <div class="footer-social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 AgroIA Project. Criado para o Futuro.</p>
+            <p>&copy; 2026 AgroIA Pro Systems. Todos os direitos reservados.</p>
         </div>
     </footer>
 
