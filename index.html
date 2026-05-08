@@ -122,6 +122,7 @@
         
         <section id="sobre" class="content-section">
             <div class="grid-layout">
+                <!-- ADICIONADA BORDA NO TEXTO-BOX -->
                 <div class="text-box" style="border: 2px solid var(--primary); border-radius: 20px; padding: 30px; background: rgba(0,0,0,0.3);">
                     <span class="label">O QUE É T.I.?</span>
                     <h2>A PROFISSÃO DO FUTURO</h2>
@@ -374,7 +375,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Carlos Eduardo</h4><span class="comment-date"><i class="far fa-clock"></i> Há 2 dias</span></div>
                             <p class="comment-body">Excelente site! As informações sobre as notas de corte do ENEM me ajudaram muito a escolher minha faculdade. Parabéns pelo conteúdo!</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 12</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">12</span></button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                     <div class="comment-item">
@@ -382,7 +383,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Mariana Costa</h4><span class="comment-date"><i class="far fa-clock"></i> Há 5 dias</span></div>
                             <p class="comment-body">Muito bom o site! As médias salariais estão bem atualizadas. Já compartilhei com meus amigos que também estão pensando em seguir na área de TI.</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 8</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">8</span></button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                     <div class="comment-item">
@@ -390,7 +391,7 @@
                         <div class="comment-content">
                             <div class="comment-header"><h4>Rafael Oliveira</h4><span class="comment-date"><i class="far fa-clock"></i> Há 1 semana</span></div>
                             <p class="comment-body">Estou no 3º ano do ensino médio e esse site me deu uma direção do que esperar da carreira em TI. Muito obrigado!</p>
-                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> 15</button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
+                            <div class="comment-footer"><button class="comment-like"><i class="far fa-heart"></i> <span class="like-count">15</span></button><button class="comment-reply"><i class="far fa-comment"></i> Responder</button></div>
                         </div>
                     </div>
                 </div>
@@ -665,25 +666,14 @@
             btn.addEventListener('click', function() {
                 const icon = this.querySelector('i');
                 const countSpan = this.querySelector('.like-count');
-                if (countSpan) {
-                    let count = parseInt(countSpan.textContent);
-                    if (icon.classList.contains('far')) {
-                        icon.classList.remove('far');
-                        icon.classList.add('fas');
-                        countSpan.textContent = count + 1;
-                    } else {
-                        icon.classList.remove('fas');
-                        icon.classList.add('far');
-                        countSpan.textContent = count - 1;
-                    }
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    countSpan.textContent = parseInt(countSpan.textContent) + 1;
                 } else {
-                    if (icon.classList.contains('far')) {
-                        icon.classList.remove('far');
-                        icon.classList.add('fas');
-                    } else {
-                        icon.classList.remove('fas');
-                        icon.classList.add('far');
-                    }
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    countSpan.textContent = parseInt(countSpan.textContent) - 1;
                 }
             });
         });
