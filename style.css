@@ -233,15 +233,15 @@ header { padding: 220px 0 120px; }
 .hero-visual { position: relative; }
 .drone-container { 
     position: relative; 
-    background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.15) 0%, transparent 70%);
     padding: 20px;
     border-radius: 30px;
 }
 .main-drone {
     width: 100%;
-    display: block; /* Garante que seja tratado como bloco */
+    display: block;
     border-radius: 30px;
-    filter: drop-shadow(0 0 30px rgba(0, 255, 136, 0.3));
+    filter: drop-shadow(0 0 40px rgba(0, 255, 136, 0.4));
     animation: float 6s ease-in-out infinite;
     position: relative;
     z-index: 1;
@@ -249,7 +249,7 @@ header { padding: 220px 0 120px; }
 
 .data-node {
     position: absolute;
-    background: rgba(2, 4, 6, 0.8);
+    background: rgba(2, 4, 6, 0.85);
     backdrop-filter: blur(10px);
     border: 1px solid var(--primary);
     padding: 8px 15px;
@@ -258,6 +258,8 @@ header { padding: 220px 0 120px; }
     font-family: 'Orbitron', sans-serif;
     animation: pulse 2s infinite;
     z-index: 10;
+    color: var(--primary);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
 }
 
 .node-1 { top: 10%; left: -10%; }
